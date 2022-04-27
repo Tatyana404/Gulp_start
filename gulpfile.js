@@ -90,5 +90,5 @@ exports.scripts = scripts
 exports.images = images
 exports.cleanDist = cleanDist
 
-exports.build = series(cleanDist, images, build) //series отвечает за строгую последовательность запуска функций, в начале удаляет вообще весь прошлый билд, затем перекидываются изображения в новый билд, затем все остальное
+exports.build = series(cleanDist, images, build) //series отвечает за строгую последовательность запуска функций, в начале удаляет весь прошлый билд, затем перекидываются изображения в новый билд, затем все остальное
 exports.default = parallel(styles, scripts, browsersync, watching) //запуск по дефолту, запускается командой gulp, после чего parallel позволяет запускать одновременно несколько процессов, все которые занимают консоль

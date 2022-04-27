@@ -1,3 +1,3 @@
-// $(function () {
-//   $('body').css('background-color', 'red')
-// })
+$(function () {
+  $('body').css('background-color', 'red')
+})
